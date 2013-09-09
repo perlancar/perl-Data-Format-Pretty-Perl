@@ -23,7 +23,6 @@ sub format_pretty {
 
 1;
 # ABSTRACT: Pretty-print data structure as Perl code
-__END__
 
 =head1 SYNOPSIS
 
@@ -57,4 +56,3 @@ options.
 L<Data::Format::Pretty>
 
 =cut
-
