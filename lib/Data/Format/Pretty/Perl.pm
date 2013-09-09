@@ -1,6 +1,6 @@
 package Data::Format::Pretty::Perl;
 
-use 5.010;
+use 5.010001;
 use strict;
 use warnings;
 
@@ -31,11 +31,13 @@ sub format_pretty {
 
 Some example output:
 
-=over 4
+=over
 
 =item * format_pretty({a=>1, b=>2})
 
  { a => 1, b => 2 }
+
+=back
 
 
 =head1 DESCRIPTION
@@ -49,6 +51,8 @@ This module uses L<Data::Dump> to format data as Perl code.
 
 Return formatted data structure as Perl code. Currently there are no known
 options.
+
+=head2 content_type()
 
 
 =head1 SEE ALSO
