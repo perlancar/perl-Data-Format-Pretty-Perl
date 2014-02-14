@@ -1,5 +1,13 @@
 Revision history for Data-Format-Pretty-Perl
 
+0.04     2014-02-14 (SHARYANTO)
+
+         - Add options: color & linum. By default enable them on interactive
+           output.
+
+         - Add newline to output.
+
+
 0.03     2013-09-09 (SHARYANTO)
 
          - No functional changes. Rebuild with MakeMaker instead of

@@ -8,7 +8,7 @@ test_format_pretty(
     name => 'default',
     data => {a=>1, b=>2},
     opts => {},
-    output => q[{ a => 1, b => 2 }],
+    output => q[{ a => 1, b => 2 }] . "\n",
 );
 
 done_testing();
