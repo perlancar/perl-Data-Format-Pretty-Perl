@@ -21,7 +21,7 @@ sub format_pretty {
 
     my $interactive = (-t STDOUT);
     my $color  = $opts->{color} // $ENV{COLOR} // $interactive;
-    my $linum  = $opts->{linum} // $ENV{LINUM} // $interactive;
+    my $linum  = $opts->{linum} // $ENV{LINUM} // 0;
 
     my $dump;
     if ($color) {
@@ -87,7 +87,7 @@ Return formatted data structure as Perl code. Options:
 Whether to enable coloring. The default is the enable only when running
 interactively. Currently also enable line numbering.
 
-=item * linum => BOOL (default: 1 or 0 if pretty=0)
+=item * linum => BOOL (default: 0)
 
 Whether to add line numbers.
 
@@ -108,10 +108,6 @@ Set C<linum> option (if unset).
 
 
 =head1 FAQ
-
-=head2 How do I turn off line numbers?
-
-You can use environment L<LINUM=0> or set option C<< linum => 0 >>.
 
 
 =head1 SEE ALSO
