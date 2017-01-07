@@ -1,5 +1,3 @@
-Revision history for Data-Format-Pretty-Perl
-
 0.05     2014-02-14 (SHARYANTO)
 
          - Change default linum from 1 when interactive to 0 to avoid potential
