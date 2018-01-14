@@ -1,5 +1,8 @@
 package Data::Format::Pretty::Perl;
 
+# DATE
+# VERSION
+
 use 5.010001;
 use strict;
 use warnings;
@@ -10,8 +13,6 @@ use Data::Dump::Color qw();
 require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(format_pretty);
-
-# VERSION
 
 sub content_type { "text/x-perl" }
 
@@ -80,7 +81,7 @@ code.
 
 Return formatted data structure as Perl code. Options:
 
-=over 4
+=over
 
 =item * color => BOOL
 
